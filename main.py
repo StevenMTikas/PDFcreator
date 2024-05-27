@@ -28,7 +28,8 @@ for index, row in df.iterrows():
         pdf.add_page()
         y_value_extra_page = 10
         for line in range(28):
-            pdf.line(x1=10, y1=y_value_extra_page, x2=200, y2=y_value_extra_page)
+            pdf.line(x1=10, y1=y_value_extra_page, 
+                     x2=200, y2=y_value_extra_page)
             y_value_extra_page = y_value_extra_page + line_spacing
 # sets footer for extra pages
         pdf.ln(274)
